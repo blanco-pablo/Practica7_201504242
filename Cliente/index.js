@@ -28,6 +28,11 @@ app.get('/', function (req, res) {
     res.render('home', { userlist : json , msm:'',pedidos : json2});
 });
 
+app.get('/pruebas', function (req, res) {    
+    res.send('hello');
+});
+
+
 //Metodo POST para pedir
 app.post('/', function (req, res) { 
     let rawdata = fs.readFileSync('../data.json');
@@ -70,3 +75,5 @@ app.post('/', function (req, res) {
 app.listen(3000, function () {
     console.log('Cliente en puerto 3000!');
 });
+
+module.exports = app;
