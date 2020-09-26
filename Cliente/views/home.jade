@@ -1,0 +1,48 @@
+html(lang="en")
+	head
+		title Cliente - Practica 4
+		meta(charset="UTF-8")
+		link(rel="stylesheet" type="text/css" href="public/css/style.css")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+	body
+		h1 Cliente
+		h1 * Combos Para Comprar
+		//TABLA GENERAL DE COMPRA
+		table(border="1px")
+			tr
+				th ID
+				th Restaurante
+				th No Combo
+				th Descripcion
+				th Precio
+			each user, i in userlist    
+				tr
+					td #{user.ID}
+					td #{user.restaurante}
+					td #{user.Combo}
+					td #{user.Descripcion}
+					td #{user.precio}
+		//FORMULARIO PARA PEDIR COMBO
+		h1 * Pedir Combo por ID
+			form(action="/", method="post")
+				input(type="text" name="id" id="id" placeholder="ID (Numero)")
+				input(type="submit" class="btn" value="Pedir")
+			h4= msm
+		// TABLA DE PEDIDOS REALIZADOS
+		h1 * Pedidos realizados 
+		table(border="1px")
+			tr
+				th No Pedido
+				th Restaurante
+				th Precio
+				th Descripcion
+				th Estado
+				th Hora
+			each user, i in pedidos    
+				tr
+					td #{user.conta}
+					td #{user.pedido.restaurante}
+					td #{user.pedido.precio}
+					td #{user.pedido.Descripcion}
+					td #{user.estado}
+					td #{user.hora}

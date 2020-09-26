@@ -1,0 +1,42 @@
+html(lang="en")
+	head
+		title Restaurante - Practica 4
+		meta(charset="UTF-8")
+		link(rel="stylesheet" type="text/css" href="public/css/style.css")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+	body
+		//FORMULARIO PARA AGREGAR COMBOS
+		h1 Agregar Combo para Venta
+		form(action="/", method="post")
+			label(style="color:blue; font-size: 20px;") Restaurante: 
+			input(type="text" name="restaurante" id="restaurante" placeholder="Nombre (String)")
+			br
+			label(style="color:blue; font-size: 20px;") No Combo: 
+			input(type="text" name="Combo" id="Combo" placeholder="Combo (Numero)")
+			br
+			label(style="color:blue; font-size: 20px;") Descripcion: 
+			input(type="text" name="Descripcion" id="Descripcion" placeholder="Descripcion (String)")
+			br
+			label(style="color:blue; font-size: 20px;") Precio: 
+			input(type="text" name="precio" id="precio" placeholder="Precio (Numero)")
+			br
+			br
+			input(type="submit" class="btn" value="AGREGAR")
+			h4= msm
+		
+		//COMBOS AGREGADOS PARA VENTA
+		h1 Combos Para Venta
+		table(border="3px")
+			tr
+				th ID
+				th Restaurante
+				th No Combo
+				th Descripcion
+				th Precio
+			each user, i in userlist    
+				tr
+					td #{user.ID}
+					td #{user.restaurante}
+					td #{user.Combo}
+					td #{user.Descripcion}
+					td #{user.precio}

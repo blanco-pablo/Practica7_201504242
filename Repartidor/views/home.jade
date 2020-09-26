@@ -1,0 +1,29 @@
+html(lang="en")
+	head
+		title Repartido - Practica 4
+		meta(charset="UTF-8")
+		link(rel="stylesheet" type="text/css" href="public/css/style.css")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+	body
+		h1 Repartidores
+		h2 * Pedidos realizados 
+		table(border="1px")
+			tr
+				th No Pedido
+				th Restaurante
+				th Precio
+				th Descripcion
+				th Estado
+				th Hora
+			each user, i in pedido    
+				tr
+					td #{user.conta}
+					td #{user.pedido.restaurante}
+					td #{user.pedido.precio}
+					td #{user.pedido.Descripcion}
+					td #{user.estado}
+					td #{user.hora}
+		h2 * Entregar por No Pedido
+			form(action="/", method="post")
+				input(type="text" name="id" id="id" placeholder="No Pedido (Numero)")
+				input(type="submit" class="btn" value="Entregar")

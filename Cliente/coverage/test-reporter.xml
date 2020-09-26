@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+    <file path="C:\Users\p_ab1\Desktop\2 SEMESTRE\SA\Practica6_201504242\Cliente\test\index.test.js">
+        <testCase name="Get Endpoints Get" duration="55"/>
+    </file>
+</testExecutions>
