@@ -6,8 +6,10 @@
 * __LINK__ repo Artefactos: https://github.com/blanco-pablo/artefactos
 
 ## Jenkis
-Pruebas tomadas de Jenkis, a la hora de realizar los artefactos y las pruebas corridas 
+* Pruebas tomadas de Jenkis, a la hora de realizar los artefactos y las pruebas corridas 
 ![Imagen](img/1.jpg)
+* Historia de Tareas Completadas en jenkis
+![Imagen](img/2.jpg)
 
 ## Restricciones 🚀
 
