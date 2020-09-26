@@ -29,7 +29,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/pruebas', function (req, res) {    
-    res.send('hello');
+    res.send('helloo');
 });
 
 
