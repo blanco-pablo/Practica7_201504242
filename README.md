@@ -1,10 +1,13 @@
-# Practica 6  - 201504242
+# Practica 7  - 201504242
 
 ## Autor ✒️
 
 * **Pablo Javier Blanco Calderon** - *201504242* - [blanco-pablo](https://github.com/blanco-pablo)
-* __LINK__ dek video: https://drive.google.com/file/d/1QIVzrydtaB0BdTrUoXXIxyRU8JTD7O--/view?usp=sharing
+* __LINK__ repo Artefactos: https://github.com/blanco-pablo/artefactos
 
+## Jenkis
+Pruebas tomadas de Jenkis, a la hora de realizar los artefactos y las pruebas corridas 
+![Imagen](img/1.jpg)
 
 ## Restricciones 🚀
 
@@ -67,9 +70,9 @@ npm -v
 ```
 # Uso 🛠️
 
-1. Clonar la rama Practica4_SA del repositorio: https://github.com/blanco-pablo/Practica6_201504242
+1. Clonar la rama Practica4_SA del repositorio: https://github.com/blanco-pablo/Practica7_201504242/tree/develop
 ```bash
-git clone https://github.com/blanco-pablo/Practica6_201504242
+git clone https://github.com/blanco-pablo/Practica7_201504242/tree/develop
 
 ```
 * Entre a la carpeta que quiere ejecutar:
@@ -96,10 +99,7 @@ npm install
     * "jade": "^1.11.0", documentacion [aqui](https://www.npmjs.com/package/express-jade)
     * "request": "^2.88.2", documentacion [aqui](https://expressjs.com/es/api.html)
 
-3. Ejecutar el test en sonar seria:
+2. Correr usar el comando, en cada carpeta
 ```bash
-npm run sonar
+npm start
 ```
-4. En el navegador abrir:
-    * Cliente SONAR: http://localhost:9000
----
